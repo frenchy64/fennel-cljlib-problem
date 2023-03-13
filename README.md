@@ -1,7 +1,8 @@
 # Problem with recursive deps
 
 ```bash
-./fennel hello-clj.fnl
+$ git submodule update --init --recursive
+$ ./fennel hello-clj.fnl
 runtime error: module 'lazy-seq' not found:
         no field package.preload['lazy-seq']
         no file '/usr/local/share/lua/5.4/lazy-seq.lua'
